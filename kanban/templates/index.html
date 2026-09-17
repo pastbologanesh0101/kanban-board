@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>Kanban Board</h1>
+    <div id="board-controls">
+      <select id="board-select"></select>
+      <button id="new-board-btn">+ New Board</button>
+      <button id="new-column-btn">+ New Column</button>
+    </div>
+  </header>
+
+  <main id="board" class="board"></main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
